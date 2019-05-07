@@ -1,3 +1,5 @@
+package c07_breakout;
+
 import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
@@ -8,7 +10,7 @@ public class Paddle extends Sprite implements Commons {
 	int dx;
 
 	public Paddle() {
-		ImageIcon ii = new ImageIcon(paddle);
+		ImageIcon ii = new ImageIcon(getClass().getResource(paddle));
 		image = ii.getImage();
 
 		width = image.getWidth(null);

@@ -1,3 +1,5 @@
+package c07_breakout;
+
 import javax.swing.ImageIcon;
 
 public class Brick extends Sprite {
@@ -8,7 +10,7 @@ public class Brick extends Sprite {
 		this.x = x;
 		this.y = y;
 
-		ImageIcon ii = new ImageIcon(brickie);
+		ImageIcon ii = new ImageIcon(getClass().getResource(brickie));
 		image = ii.getImage();
 
 		width = image.getWidth(null);

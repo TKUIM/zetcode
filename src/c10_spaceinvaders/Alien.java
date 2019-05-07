@@ -1,14 +1,16 @@
+package c10_spaceinvaders;
+
 import javax.swing.ImageIcon;
 
 public class Alien extends Sprite {
 	private Bomb mBomb;
-	private final String path = "./img/alien.png";
+	private final String path = "img/alien.png";
 
 	public Alien(int x, int y) {
 		mX = x;
 		mY = y;
 		mBomb = new Bomb(x,y);
-		ImageIcon ii = new ImageIcon(path);
+		ImageIcon ii = new ImageIcon(getClass().getResource(path));
 		setImage(ii.getImage());
 	}
 

@@ -1,3 +1,5 @@
+package c07_breakout;
+
 import javax.swing.ImageIcon;
 
 public class Ball extends Sprite implements Commons {
@@ -10,7 +12,7 @@ public class Ball extends Sprite implements Commons {
 		xdir = 1;
 		ydir = -1;
 
-		ImageIcon ii = new ImageIcon(ball);
+		ImageIcon ii = new ImageIcon(getClass().getResource(ball));
 		image = ii.getImage();
 
 		width = image.getWidth(null);

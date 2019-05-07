@@ -1,4 +1,4 @@
-package com.zetcode;
+package c09_pacman;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;

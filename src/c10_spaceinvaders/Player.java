@@ -1,3 +1,5 @@
+package c10_spaceinvaders;
+
 import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 
@@ -5,11 +7,11 @@ public class Player extends Sprite implements Commons {
 	private final int START_X = 270;
 	private final int START_Y = 280;
 
-	private final String path = "./img/player.png";
+	private final String path = "img/player.png";
 	private int mWidth;
 
 	public Player() {
-		ImageIcon ii = new ImageIcon(path);
+		ImageIcon ii = new ImageIcon(getClass().getResource(path));
 		setImage(ii.getImage());
 		mWidth = ii.getImage().getWidth(null);
 		setX(START_X);

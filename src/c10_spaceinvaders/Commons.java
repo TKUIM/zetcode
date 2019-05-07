@@ -1,3 +1,5 @@
+package c10_spaceinvaders;
+
 public interface Commons {
 	public static final int BOARD_WIDTH = 358;
 	public static final int BOARD_HEIGHT = 350;

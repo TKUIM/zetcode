@@ -1,4 +1,5 @@
-import c03_sprites.c02_missile.Board;
+package c07_breakout;
+
 import javax.swing.JFrame;
 
 public class Breakout extends JFrame {

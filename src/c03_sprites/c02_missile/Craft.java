@@ -21,7 +21,7 @@ public class Craft {
 	private final int CRAFT_SIZE = 20;
 
 	public Craft() {
-		ImageIcon ii = new ImageIcon(IMAGE_FILE);
+		ImageIcon ii = new ImageIcon(getClass().getResource(IMAGE_FILE));
 		mImage = ii.getImage();
 		mMissiles = new ArrayList<Missile>();
 		mX = 40;

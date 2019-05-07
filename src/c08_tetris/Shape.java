@@ -1,4 +1,4 @@
-package tetris;
+package c08_tetris;
 
 import java.util.Random;
 import java.lang.Math;

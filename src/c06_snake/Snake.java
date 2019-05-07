@@ -1,4 +1,5 @@
-import c03_sprites.c02_missile.Board;
+package c06_snake;
+
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 

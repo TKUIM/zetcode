@@ -1,3 +1,5 @@
+package c10_spaceinvaders;
+
 import java.awt.Image;
 
 public class Sprite {

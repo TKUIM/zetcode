@@ -1,3 +1,5 @@
+package c06_snake;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -52,13 +54,13 @@ public class Board extends JPanel implements ActionListener {
 	}
 
 	private void loadImages() {
-		ImageIcon iid = new ImageIcon("dot.png");
+		ImageIcon iid = new ImageIcon(getClass().getResource("dot.png"));
 		ball = iid.getImage();
 
-		ImageIcon iia = new ImageIcon("apple.png");
+		ImageIcon iia = new ImageIcon(getClass().getResource("apple.png"));
 		apple = iia.getImage();
 
-		ImageIcon iih = new ImageIcon("head.png");
+		ImageIcon iih = new ImageIcon(getClass().getResource("head.png"));
 		head = iih.getImage();
 	}
 

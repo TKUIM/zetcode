@@ -1,3 +1,5 @@
+package c07_breakout;
+
 import java.awt.Image;
 import java.awt.Rectangle;
 

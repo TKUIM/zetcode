@@ -1,3 +1,5 @@
+package c10_spaceinvaders;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -26,8 +28,8 @@ public class Board extends JPanel implements Runnable, Commons {
 	private int deaths = 0;
 
 	private boolean ingame = true;
-	private final String explImg = "./img/explosion.png";
-	private final String alienImg = "./img/alien.png";
+	private final String explImg = "img/explosion.png";
+	private final String alienImg = "img/alien.png";
 	private String message = "Game Over";
 
 	private Thread animator;
@@ -49,7 +51,7 @@ public class Board extends JPanel implements Runnable, Commons {
 
 	public void gameInit() {
 		aliens = new ArrayList<Alien>();
-		ImageIcon ii = new ImageIcon(alienImg);
+		ImageIcon ii = new ImageIcon(getClass().getResource(alienImg));
 
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 6; j++) {
@@ -163,7 +165,7 @@ public class Board extends JPanel implements Runnable, Commons {
 
 				if (alien.isVisible() && (shot.isVisible())) {
 					if ((shotX >= alienX) && (shotX <= alienX + ALIEN_WIDTH) && (shotY >= alienY) && (shotY <= alienY+ALIEN_HEIGHT)) {
-						ImageIcon ii = new ImageIcon(explImg);
+						ImageIcon ii = new ImageIcon(getClass().getResource(explImg));
 						alien.setImage(ii.getImage());
 						alien.setDying(true);
 						deaths++;

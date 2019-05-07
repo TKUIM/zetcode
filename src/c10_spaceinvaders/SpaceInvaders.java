@@ -1,4 +1,5 @@
-import c03_sprites.c02_missile.Board;
+package c10_spaceinvaders;
+
 import javax.swing.JFrame;
 
 public class SpaceInvaders extends JFrame implements Commons {
