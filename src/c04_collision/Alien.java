@@ -7,7 +7,7 @@ import javax.swing.ImageIcon;
 
 public class Alien extends Entity {
 	public Alien(int x, int y) {
-		IMAGE_FILE = "alien.png";
+		IMAGE_FILE = "resources/alien.png";
 		this.init(x,y);
 	}
 

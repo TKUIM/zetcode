@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 
 public class Paddle extends Sprite implements Commons {
-	String paddle = "paddle.png";
+	String paddle = "resources/paddle.png";
 
 	int dx;
 

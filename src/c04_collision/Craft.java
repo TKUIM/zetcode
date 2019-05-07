@@ -18,7 +18,7 @@ public class Craft extends Entity {
 	private final int CRAFT_SIZE = 20;
 
 	public Craft() {
-		IMAGE_FILE = "craft.png";
+		IMAGE_FILE = "resources/craft.png";
 		this.init(40,60);
 		mMissiles = new ArrayList<Missile>();
 	}

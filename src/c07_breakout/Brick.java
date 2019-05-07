@@ -3,7 +3,7 @@ package c07_breakout;
 import javax.swing.ImageIcon;
 
 public class Brick extends Sprite {
-	String brickie = "brickie.png";
+	String brickie = "resources/brickie.png";
 	boolean destroyed;
 
 	public Brick(int x, int y) {

@@ -6,7 +6,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 
 public class Craft {
-	private String craft = "craft.png";
+	private String craft = "resources/craft.png";
 
 	private int mDx;
 	private int mDy;

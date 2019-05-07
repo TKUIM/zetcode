@@ -21,7 +21,7 @@ public class Board extends JPanel {
 	}
 
 	private void loadImage() {
-		ImageIcon ii = new ImageIcon(getClass().getResource("derp.png"));
+		ImageIcon ii = new ImageIcon(getClass().getResource("resources/derp.png"));
 		mImg = ii.getImage();
 	}
 

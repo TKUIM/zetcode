@@ -191,7 +191,7 @@ public class PuzzleEx extends JFrame {
     private BufferedImage loadImage() throws IOException {
 
         //File f = getClass().getResource().getFile();
-        URL u = getClass().getResource("icesid.jpg");
+        URL u = getClass().getResource("resources/icesid.jpg");
         File f = new File(u.getFile());
         BufferedImage bimg = ImageIO.read(f);
 

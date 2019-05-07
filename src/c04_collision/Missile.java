@@ -11,7 +11,7 @@ public class Missile extends Entity {
 	private final int MISSILE_SPEED = 2;
 
 	public Missile(int x, int y) {
-		IMAGE_FILE = "missile.png";
+		IMAGE_FILE = "resources/missile.png";
 		this.init(x,y);
 	}
 

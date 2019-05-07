@@ -25,7 +25,7 @@ public class Board extends JPanel implements Runnable {
 	}
 
 	private void loadImage() {
-		ImageIcon ii = new ImageIcon(getClass().getResource("star.png"));
+		ImageIcon ii = new ImageIcon(getClass().getResource("resources/star.png"));
 		star = ii.getImage();
 	}
 
