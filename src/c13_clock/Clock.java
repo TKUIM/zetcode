@@ -79,9 +79,10 @@ class ClockPanel extends JPanel implements Runnable {
   public void run(){
     while(true){
       try{
-        int currentSecond = Calendar.getInstance().get(Calendar.SECOND);
-        int currentMinute = Calendar.getInstance().get(Calendar.MINUTE);
-        int currentHour = Calendar.getInstance().get(Calendar.HOUR);
+        Calendar cal = Calendar.getInstance();
+        int currentSecond = cal.get(Calendar.SECOND);
+        int currentMinute = cal.get(Calendar.MINUTE);
+        int currentHour = cal.get(Calendar.HOUR);
 
         xHandSec = minToLocation(currentSecond, secondHandLength).x;
         yHandSec = minToLocation(currentSecond, secondHandLength).y;
@@ -140,7 +141,7 @@ class ClockPanel extends JPanel implements Runnable {
     }
 
     // Draw the clock hands
-    g2.setColor(Color.white);
+    g2.setColor(Color.black);
     g2.drawLine(HORIZONTAL_SIZE / 2, VERTICAL_SIZE / 2, xHandSec, yHandSec);
     g2.drawLine(HORIZONTAL_SIZE / 2, VERTICAL_SIZE / 2, xHandMin, yHandMin);
     g2.drawLine(HORIZONTAL_SIZE / 2, VERTICAL_SIZE / 2, xHandHour, yHandHour);
