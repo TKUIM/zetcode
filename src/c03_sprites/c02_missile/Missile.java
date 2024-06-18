@@ -9,7 +9,7 @@ public class Missile {
 	private Image mImage;
 	boolean mVisible;
 
-	private final String IMAGE_FILE = "missile.png";
+	private final String IMAGE_FILE = "resources/missile.png";
 	private final int BOARD_WIDTH = 390;
 	private final int MISSILE_SPEED = 2;
 

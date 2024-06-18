@@ -2,6 +2,7 @@ package c03_sprites.c02_missile;
 
 import java.awt.Image;
 import java.awt.event.KeyEvent;
+import java.net.URL;
 
 import java.util.ArrayList;
 
@@ -17,11 +18,12 @@ public class Craft {
 
 	private ArrayList<Missile> mMissiles;
 
-	private final String IMAGE_FILE = "craft.png";
+	private final String IMAGE_FILE = "resources/craft.png";
 	private final int CRAFT_SIZE = 20;
 
 	public Craft() {
-		ImageIcon ii = new ImageIcon(getClass().getResource(IMAGE_FILE));
+                URL url = getClass().getResource(IMAGE_FILE);
+		ImageIcon ii = new ImageIcon(url);
 		mImage = ii.getImage();
 		mMissiles = new ArrayList<Missile>();
 		mX = 40;
